@@ -1,13 +1,15 @@
 package Run;
 
+import java.io.File;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class KeyDriver implements IAutoConstant {
+public class KeyDriverUsingXml implements IAutoConstant {
 	public static Generic g = new Generic();
 	public static WebDriver driver;
 
@@ -28,9 +30,28 @@ public class KeyDriver implements IAutoConstant {
 		
 	//}
 	
-	
+	@Parameters({"FlipkartLogin","./controller/scripts/"})
 	@Test
-	public void executeTest()throws InterruptedException {
+	public void executeTest(String suitName, String suitPath)throws InterruptedException {
+		
+		File folder = new File(suitPath);
+		File[] listOfFiles = folder.listFiles();
+
+		    for (int i = 0; i < listOfFiles.length; i++) {
+		      if (listOfFiles[i].isFile()) {
+		        String fileName = listOfFiles[i].getName();
+			    String[] name=fileName.split(".xlsx"); 
+			    //using l){  
+			    System.out.println(w);   
+			    }
+		        } 
+		    }
+		
+		
+		
+		
+		
+		
 		int countScripts = g.getExcelRowCount(CONTROL_XL_PATH, "ScriptsToRun");
 		for(int j = 1;j<=countScripts;j++) {
 			String ScriptName = g.getExcelCellValue(CONTROL_XL_PATH, "ScriptsToRun", j, 0);

@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13415" started-at="2018-03-17T23:17:56Z" finished-at="2018-03-17T23:18:10Z">
+  <suite name="FlipkartLogin" duration-ms="44870" started-at="2018-03-18T09:33:21Z" finished-at="2018-03-18T09:34:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13415" started-at="2018-03-17T23:17:56Z" finished-at="2018-03-17T23:18:10Z">
-      <class name="Run.KeyDriver">
-        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:Run.KeyDriver@1bce4f0a]" name="LaunchBrowser" is-config="true" duration-ms="9586" started-at="2018-03-17T23:17:56Z" finished-at="2018-03-17T23:18:06Z">
+    <test name="FlipkartLogin" duration-ms="44870" started-at="2018-03-18T09:33:21Z" finished-at="2018-03-18T09:34:06Z">
+      <class name="Run.KeyDriverUsingXml">
+        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:Run.KeyDriverUsingXml@5c3bd550]" name="LaunchBrowser" is-config="true" duration-ms="20812" started-at="2018-03-18T09:33:21Z" finished-at="2018-03-18T09:33:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method status="PASS" signature="executeTest()[pri:0, instance:Run.KeyDriver@1bce4f0a]" name="executeTest" duration-ms="1609" started-at="2018-03-17T23:18:06Z" finished-at="2018-03-17T23:18:08Z">
+        <test-method status="PASS" signature="executeTest()[pri:0, instance:Run.KeyDriverUsingXml@5c3bd550]" name="executeTest" duration-ms="21400" started-at="2018-03-18T09:33:42Z" finished-at="2018-03-18T09:34:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTest -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:Run.KeyDriver@1bce4f0a]" name="closeApplication" is-config="true" duration-ms="2203" started-at="2018-03-17T23:18:08Z" finished-at="2018-03-17T23:18:10Z">
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:Run.KeyDriverUsingXml@5c3bd550]" name="closeApplication" is-config="true" duration-ms="2623" started-at="2018-03-18T09:34:03Z" finished-at="2018-03-18T09:34:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-      </class> <!-- Run.KeyDriver -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Run.KeyDriverUsingXml -->
+    </test> <!-- FlipkartLogin -->
+  </suite> <!-- FlipkartLogin -->
 </testng-results>
